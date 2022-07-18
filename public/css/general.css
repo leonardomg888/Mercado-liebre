@@ -1,0 +1,46 @@
+:root {
+   
+
+
+
+/*Paleta de colores*/
+--colorAmarillo: #EAC926;
+--colorAzul: #03264C;
+--colorCeleste: #1259c3;
+--colorGrisOscuro: #666;
+--colorGrisClaro: #ebebeb;
+--colorVerde: #39b54a;
+
+
+--textoSizeCuerpo : 12px;
+--textoSizeTitulares : 24px;
+--textoSizePrecios: 18px;
+--textoSizeDescuentos: 16px;
+--textoSizeDescripciones: 16px
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+ul, li{
+    padding: 0;
+}
+header{
+    background-color: var(--colorAmarillo);
+}
+
+
+
+.main__section__producto--descuento{
+    color:var(--colorVerde)
+}
+/*.footer__main--piePagina {
+   
+    text-align: center;
+    font-size: 2em;
+  margin-bottom: 10px;
+  transition: 475ms
+}*/
+h3{
+  font-size: var(--textoSizeTitulares);
+}

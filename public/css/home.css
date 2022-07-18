@@ -1,0 +1,284 @@
+/*
+<div class="burger-menu">
+    <i class="fas fa-bars"></i>
+    </div>
+    Solo faltaría que le coloquemos los estilos*/
+    /*<i class="fa-brands fa-sistrix"></i>
+tarjeta
+    <i class="fa-light fa-address-card"></i>
+mano
+    <i class="fa-light fa-hand-holding-dollar"></i>
+    flecha
+    <i class="fa-light fa-right-to-bracket"></i>
+    canasto
+    <i class="fa-light fa-basket-shopping"></i>
+
+
+    script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
+    * {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --default-padding: 0px;
+    --default-margin: 0px;*/
+
+
+:root {
+    --default-padding: 0px;
+    --default-margin: 0px;
+}
+
+.body_main {
+    background-color:var(--colorGrisClaro);
+      font-family: 'Roboto', sans-serif;
+    font-size: var(--textoSizeCuerpo);
+      display: flex;
+    flex-direction: column;
+    
+   
+  }
+
+.header__main__logo--imagen{
+    width: 100px;
+}
+
+
+.body--compra{
+padding-top: 10px;
+    text-align: center;
+}
+.body__nav--texto ul {
+ 
+    list-style-type: none;
+}
+.banner__img{
+    width: 100%;
+    display:block;
+  
+
+}
+.imagen{
+   
+   
+   width: 100%;
+    
+    
+
+}
+
+.body--compra--lista ul li {
+    list-style-type: none;
+}
+
+
+.body__nav--texto ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu i {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    
+    
+}
+    
+
+
+
+
+/*.header__main__logo--imagen {
+    
+    position: relative;
+    display: inline-block;
+    flex-direction: center;
+   
+}*/
+.body--busqueda {
+    width: 4vw;
+    left: 5%;
+}
+
+.form {
+    width: 100%;
+}
+/*--------MAIN-----------*/
+.sub--main{
+padding: 2px;
+  /*  display: inline-block ;*/
+
+width: 90%;
+/*border: solid 1px #ebebeb;*/
+margin: auto;
+
+}
+.main__section{
+/*background-color: white;*/
+/*margin-bottom: 25px;*/
+
+/*transition:all 45ms;*/
+margin:1px;
+}
+
+.main__section__producto--precio{
+    font-size: 18px;
+}
+.main__section__producto--descuento{
+    font-size: 16x;
+   
+
+}
+.main__section__producto--descripcion{
+font-size: 16px;
+}
+
+.fa-truck{
+border-bottom: #ebebeb;
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+    color:var(--colorVerde);
+    padding: 1%;
+    font-size:medium;
+
+   
+
+}
+.main__section__producto{
+   position: relative;
+    padding: 15px;
+    border-top: solid #ebebeb 1px;
+   background-color: white; 
+    flex-wrap: wrap;
+    align-items: center;
+   gap: 2px; 
+   margin-top: 30px;
+
+box-shadow: 0px 0px 10px rgb(100,100,100);
+  margin: 5px 0;
+   
+
+
+}
+
+/*------------------------------------footer---------------------------*/
+.footer__main {
+    background-color: white;
+    color: #666;
+   
+    padding: 20px 10%;
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__main--piePagina {
+   
+    text-align: center;
+    font-size: 2em;
+  margin-bottom: 10px;
+  transition: 475ms
+}
+
+
+
+.copyright {
+    font-size: x-small;
+    text-align: center;
+}
+/*------------------------------*/
+@media(min-width: 320px){
+    .body__nav--texto{
+        display: none;
+    }
+
+    .main__section__producto{
+        margin-top: 15px;
+      
+      box-shadow:none;
+            
+     
+      
+      }
+
+}
+
+
+
+@media (min-width: 768px) {
+    .body__nav--texto{
+       display: inline-block;
+    }
+    .burger-menu i {
+        display: none;
+    }
+    .main__section__producto{
+       
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        margin-top: 15px;       
+        
+        
+        }
+
+        .sub--main{
+            width: 45%;
+           justify-content:space-between;
+           display: flex; 
+
+        }
+        .body_main{
+        flex-direction: none;
+        display: flex;
+        }
+        .main__section__producto{
+            position: relative;
+             padding: 15px;
+             border-top: solid #ebebeb 1px;
+            background-color: white; 
+             flex-wrap: wrap;
+          /*   align-items: center;*/
+            gap: 2px; 
+            margin-top: 30px;
+       
+
+
+}
+}
+
+/*----------------escritorio----------------*/
+@media (min-width:1024px) {
+
+
+    .burger-menu i {
+        display: none;
+    }
+
+    .main__section__producto{
+       
+      
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+              
+        margin-top: 15px;
+        
+        }
+}
+
+
+
+
+
+
+
