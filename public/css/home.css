@@ -1,0 +1,430 @@
+/*
+<div class="burger-menu">
+    <i class="fas fa-bars"></i>
+    </div>
+    Solo faltaría que le coloquemos los estilos*/
+    /*<i class="fa-brands fa-sistrix"></i>
+tarjeta
+    <i class="fa-light fa-address-card"></i>
+mano
+    <i class="fa-light fa-hand-holding-dollar"></i>
+    flecha
+    <i class="fa-light fa-right-to-bracket"></i>
+    canasto
+    <i class="fa-light fa-basket-shopping"></i>
+
+
+    script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
+    */
+    :root {
+        --default-padding: 0px;
+        --default-margin: 0px;
+    }
+    
+      .body_main {
+        background-color:var(--colorGrisClaro);
+        font-family: 'Roboto', sans-serif;
+        font-size: var(--textoSizeCuerpo);
+       
+   flex-direction: row;
+      }
+  
+       
+      
+       .header__main{
+        flex-direction: row;
+       flex-wrap: wrap;
+       /*display: flex; */
+       
+       }
+    
+       .header__main__logo--imagen{
+        width: 100px;
+        margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+       }
+
+    
+    
+    .body--compra{
+   /* padding-top: 10px;
+        text-align: center;*/
+         font-size: var(--textoSizeDescripciones);
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 15px;
+
+    }
+    .body__nav--texto ul {
+     
+        list-style-type: none;
+    }
+    .banner__img{
+        width: 100%;
+        display:block;
+      
+    
+    }
+    .imagen{
+       
+       
+       width: 100%;
+        
+        
+    
+    }
+    
+    .body--compra--lista ul li {
+        list-style-type: none;
+       
+    }
+    
+    
+    
+    .body__nav--texto ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .burger-menu i {
+        background-color: #1259c3;
+        color: white;
+        display: block;
+        max-width: 22px;
+        padding: 2px 0;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 13px;
+        margin: auto;
+        
+        
+    }
+            
+    
+    
+    
+    /*.header__main__logo--imagen {
+        
+        position: relative;
+        display: inline-block;
+        flex-direction: center;
+       
+    }*/
+    .body--busqueda {
+        width: 4vw;
+        left: 5%;
+    }
+    
+    .form {
+        width: 100%;
+    }
+    /*--------MAIN-----------*/
+    .sub--main{
+    padding: 2px;
+      /*  display: inline-block ;*/
+    
+    width: 90%;
+    /*border: solid 1px #ebebeb;*/
+    margin: auto;
+    
+    }
+   /*--- .main__section {
+        /* width: 45%; */
+        /* text-align: justify; */
+      
+       
+   /*-----     gap: 20px 20px;
+    }*/
+    
+    .main__section{
+        width: 90%;
+        text-align: justify;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 20px;
+        justify-content: space-between;
+    }*/
+    
+    .main__section__producto--precio{
+        font-size: 18px;
+    }
+    .main__section__producto--descuento{
+        font-size: 16x;
+       
+    
+    }
+    .main__section__producto--descripcion{
+    font-size: 16px;
+    }
+    
+    .fa-truck{
+        /*border-bottom: #ebebeb;
+            border: 1px solid var(--colorVerde);
+            border-radius: 50%;
+            color:var(--colorVerde);
+            padding: 1%;
+            font-size:medium;*/
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #39b54a;
+            background-color: #FFF;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: -15px;
+        color: green;
+           
+        
+        }
+        .main__section__producto{
+           position: relative;
+            padding: 15px;
+            border-top: solid #ebebeb 1px;
+           background-color: white; 
+           /* flex-wrap: wrap;*/
+            align-items: center;
+           gap: 2px; 
+           margin-top: 30px;
+        
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+          margin: 5px 0;
+        }
+        
+
+   
+        
+    
+    /*------------------------------------footer---------------------------*/
+    .footer__main {
+        background-color: var(#699);
+        color: #666;
+       
+        padding: 20px 10%;
+    
+    }
+    
+    
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .footer__main--piePagina {
+       
+        text-align: center;
+        font-size: 2em;
+      margin-bottom: 10px;
+      transition: 475ms
+    }
+    
+    
+    
+    .copyright {
+        font-size: x-small;
+        text-align: center;
+    }
+    /*---------------adaptativo----------*/
+    /*------------------------------*/
+@media(min-width: 320px){
+    .body__nav--texto{
+        display: none;
+    }
+    .header__main__logo--imagen{
+        text-align: center;
+    }
+    .body--compra{
+        margin: auto;
+    }
+    .main__section__producto{
+        margin-top: 15px;
+    
+      box-shadow:none;
+      
+    }
+            
+     .main__section__producto--descripcion{
+    display: none;
+     }
+      
+      /*-*/
+      .burger-menu i {
+        justify-items: center;
+        display: flex;
+      }
+    
+      
+
+      .main__section__producto--descuento{
+        color: var(--colorVerde);
+      }
+      .fa-truck{
+       
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #39b54a;
+            background-color: #FFF;
+            border-radius: 50%;
+          /*  position: absolute;*/
+            right: 20px;
+            top: 83%;
+            color:var(green )
+        }
+      .main__section__producto{
+     
+      }
+}
+
+
+
+
+@media (min-width: 768px) {
+    
+    .body--compra{
+       /* padding-top: 10px;*/
+        
+      /*  padding-top: 10px; */
+    text-align: center;
+    /* margin: 9px 0px; */
+    position: relative;
+}
+    
+
+.header__main__logo--imagen{
+    text-align: center;
+    width: 150px;
+}
+.fa-truck{
+    top: -25px;
+}
+    .body__nav--texto{
+       display: flex;
+       justify-content: space-between;
+    }
+    .burger-menu i {
+        display: none;
+    }
+    .main__section__producto{
+       width: 40%;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        margin-top: 15px;       
+        
+        
+        }
+
+        /*.sub--main{
+            width: 45%;
+           justify-content:space-between;
+           display: flex; 
+
+        }
+        /*.body_main{
+        flex-direction: none;
+        display: flex;
+        }*/
+    
+
+
+.main__div{
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align:justify;
+    position: relative;
+    display: flex;
+   justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 16px;
+}
+
+.main__section__producto--descripcion{
+    display: flex;
+
+}
+.form {
+    text-align: end;
+    margin: 36px -6px;
+    position: relative;
+}
+.header__main__logo--imagen{
+
+justify-items: baseline;
+    position: absolute;
+    width: 100px;
+}
+
+.header__main{
+    /*/display: flex;*/
+    position: relative;
+}
+
+
+
+}
+
+/*----------------escritorio----------------*/
+@media (min-width:1024px) {
+    .body__nav--texto{
+        display: flex;
+        justify-content: space-between;
+        font-size: medium;
+     }
+     .body--compra{
+        /* padding-top: 10px;*/
+         
+       /*  padding-top: 10px; */
+     text-align: center;
+     /* margin: 9px 0px; */
+     position: relative;
+ }
+ 
+
+    .burger-menu i {
+        display: none;
+    }
+
+    .main__section__producto{
+       
+      width: 20%;
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+              
+        margin-top: 15px;
+        
+        }
+       /* .body--compra--lista{
+            display: flex;
+        
+            justify-content: right;
+        }*/
+
+       
+
+        .tarjetas{
+         display: flex;
+         justify-content: flex-start;
+                    }
+    
+       
+        
+        
+    ul{
+/* display: flex;
+    justify-content: flex-start;*/
+}
+    }
+         
+    
+           
+
+
