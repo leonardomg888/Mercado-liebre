@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ae7c764a16.js" crossorigin="anonymous"></script>
+​
+  </head>
+  
+    <header class="header__main">
+​
+      <div class="header__main__logo--imagen">
+       <a href="/home" title="logo"> <img  src="/img/logo-mercado-liebre.svg" alt="Logo"></a>
+    </div>
+  
+​
+      
+        <form class="form" action="">
+			<input type="text">
+			<button class="body--busqueda"> 
+        <i class="fas fa-search"></i>
+      </button>
+		</form>
+        
+​
+​
+​
+		<p class="body--compra">
+      <i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de crédito</p>
+		
+      <nav class="body__nav--texto ">
+    <ul class="body--compra--lista">
+			<li><a href="" title="Ofertas">Ofertas</a></li>
+			<li><a href="" title="Tiendas Oficiales">Tiendas Oficiales</a></li>
+			<li><a href="" title="Vender">Vender</a></li>
+			<li><a href="" title="Ayuda">Ayuda</a></li>
+		</ul>
+		<ul class="body--compra--lista">
+			 
+            
+                <li><button type=""><a href="/register">Creá tu Cuenta</a><i class="far fa-address-card"></i></button></li>
+                <li><a href="/login">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/cart">Mis Compras</a><i class="fas fa-shopping-basket"></i></li>
+            
+			
+		</ul>
+  </nav>
+    <div class="burger-menu texto-centrado">
+      <i class="fas fa-bars"></i>
+    </div>
+	
+    </header>
+   
+<!--       register         -->
+<form action="/" method="GET" class="formulario">
+    <div class="control-formulario">
+        <input type="text" name="nombre" placeholder="Nombre y apellido" minlength="3" class="control" >
+        <small class="form__error">El Nombre y Apellido obligatorio</small>
+
+    </div>
+    <div class="control-formulario">
+        <input type="text" name="usuario" placeholder="Nombre de usuario" class="control" >
+        <small class="form__error">Nombre de Usuario obligatorio</small>
+
+    </div>
+    <div class="control-formulario">
+        <input type="email" name="email" placeholder="E-mail" class="control" >
+        <small class="form__error">El email obligatorio</small>
+
+    </div>
+    <div class="control-formulario">
+        <h3>Fecha de nacimiento</h3>
+        <input type="date" name="edad" min='1900-01-01' max="2010-01-01" class="control">
+        <small class="form__error">El Fecha de nacimiento obligatorio</small>
+
+    </div>
+    <div class="control-formulario">
+        <input type="text" name="domicilio" placeholder="Domicilio" class="control">
+        <small class="form__error">El Domicilio obligatorio</small>
+
+    </div>
+    
+    
+    
+    <div class="control-formulario">
+        <h3>Perfil del usuario</h3>
+        <label class="radio"><input type="radio" name="perfil" ></input>Comprador</label>
+        <label class="radio"><input type="radio" name="perfil" ></input>Vendedor</label>
+    </div>
+    <div class="control-formulario">
+        <h3>Intereses</h3>
+        <label class="check"><input type="checkbox" name="categoria" value="electro"></input>Electro</label>
+   <br>
+        <label class="check"><input type="checkbox" name="categoria" value="moda"></input>Moda</label>
+        <br>
+        <label class="check"><input type="checkbox" name="categoria" value="hogar"></input>Hogar</label>
+        <br>
+        <label class="check"><input type="checkbox" name="categoria" value="jugeteria"></input>Jugetería</label>
+        <br>
+        <label class="check"><input type="checkbox" name="categoria" value="vidaSana"></input>Vida sana</label>
+    </div>
+    <div class="control-formulario">
+        <h3>Foto de usuario</h3>
+        <input type="file" name="fotoUsuario" accept=".jpg, .png" class="control"></input>
+    </div>
+    <div class="control-formulario">
+        <h3>Clave</h3>
+        <input type="password" name="contrasena" placeholder="Contraseña" class="control" >
+     <small class="form__error">La contrasena es obligatorio</small>
+
+    </div>
+    <div class="control-formulario">
+     <input type="password" name="contrasena" placeholder="Confirmar contraseña" class="control" >     
+     <small class="form__error">La contrasena no son iguales </small>
+    </div>
+    <button type="submit" class="boton-formulario">Enviar</button>
+    <button type="reset" class="boton-formulario">Borrar</button>
+</form>
+
+<!--                        -->    
+<footer class="footer__main">
+    
+        <article class="footer__main--piePagina">
+          <i class="fas fa-credit-card" style="color: #1259c3"></i>
+          <h3>Pagá con tarjeta o en efectivo</h3>
+          <h6>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</h6>
+        </article>
+  
+        <article class="footer__main--piePagina">
+          <i class="fas fa-gift" style="color: #1259c3"></i>
+          <h3>Envio gratis desde los $1.990</h3>
+          <h6>Solo por estar registrado en MercadoLiebre tenés envios gratis en miles de productos. Es un beneficio de MercadoPuntos</h6>
+        </article>
+  
+        <article class="footer__main--piePagina">
+          <i class="fas fa-user-shield" style="color: #1259c3"></i>
+          <h3>Seguridad de principio a fin</h3>
+          <h6>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegido.</h6>
+        </article>
+        
+      
+      
+        <div class="copyright">Copyright © 1999-2019 MercadoLiebre S.R.L.</div>
+​
+​
+      
+      </footer>
+​ 
+      
+    
+    </body>
+</html>
